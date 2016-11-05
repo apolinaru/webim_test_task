@@ -1,0 +1,187 @@
+body, html {
+	width: 100%;
+	height: 100%;
+	min-width: 300px;
+}
+
+body {
+	background: white;
+	font-family: Helvetica, Arial;
+}
+
+.auth_page {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.auth_page__blank {
+	height: 100px;
+	width: 100%;
+}
+
+.app_page {
+	width: 100%;
+	height: 100%;
+}
+
+.user_bar {
+	background: #607D8B;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+	text-align: center;
+	padding: 50px 0 50px;
+}
+
+.user_bar__avatar {
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	margin: 0px 20px 20px;
+}
+
+.user_bar__name {
+	color: #fff;
+    margin: 0;
+    font-weight: 300;
+    font-size: 36px;
+}
+
+.ctls {
+	height: 0;
+	width: 100%;
+	text-align: center;
+	margin: -10px 0 60px;
+}
+
+.btn {
+	text-decoration: none;
+}
+
+.btn__view {
+	padding: 15px;
+	display: inline;
+	border-radius: 10px;
+	text-transform: uppercase;
+	color: white;
+	box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.btn__view-auth {
+	background: #607D8B;
+}
+
+.btn__view-reload {
+	background: #29b529;
+	margin-right: 20px;
+}
+
+.btn__view-logout {
+	background: #e01e1e;
+}
+
+.btn__view-auth:hover {
+	background: #455A64;
+}
+
+.btn__view-reload:hover {
+	background: #19a519;
+}
+
+.btn__view-logout:hover {
+	background: #d00e0e;
+}
+
+.friends_list {
+	text-align: center;	
+}
+
+.friend {
+	line-height: 80px;
+	margin: 0 20px;
+	display: inline-block;
+}
+
+.friend__avatar {
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+	display: inline;
+	margin-right: 20px;
+}
+
+.friend__name {
+	display: inline;
+	color: #212121;
+	vertical-align: top;
+	font-size: 30px;
+}
+
+@media all and (max-width: 800px) {
+	.user_bar {
+		text-align: left;
+		padding: 10px 0;
+	}
+	.user_bar__avatar {
+		height: 100px;
+		width: 100px;
+		display: inline;
+		margin: 0 20px;
+	}
+	.user_bar__name {
+		display: inline-block;
+    	margin: 30px 0;
+    	vertical-align: top;
+	}
+	.friends_list {
+		text-align: left;	
+	}
+	.ctls {
+		text-align: right;
+	}
+	.btn__view {
+		padding: 10px;
+		font-size: 14px;
+	}
+	.btn__view-logout {
+		margin-right: 20px;
+	}
+}
+
+@media all and (max-width: 480px) {
+	.user_bar {
+		padding: 10px 0;
+	}
+	.user_bar__avatar {
+		height: 50px;
+		width: 50px;
+		margin: 0 20px;
+	}
+	.user_bar__name {
+		display: inline-block;
+    	margin: 15px 0;
+    	vertical-align: top;
+    	font-size: 20px;
+	}
+	.btn__view {
+		padding: 8px;
+		font-size: 12px;
+		border-radius: 8px;
+	}
+	.btn__view-reload {
+		margin-right: 10px;
+	}
+	.btn__view-logout {
+		margin-right: 10px;
+	}
+	.friend {
+		line-height: 40px;
+	}
+	.friend__avatar {
+		height: 40px;
+		width: 40px;
+	}
+	.friend__name {
+		font-size: 20px;
+	}
+}

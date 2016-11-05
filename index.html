@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>My random friends</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/app2.css">
+	<script src="js/underscore-min.js"></script>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/backbone-min.js"></script>
+	<script src="https://vk.com/js/api/openapi.js?136" type="text/javascript"></script>
+	<script src="js/app.js"></script>
+</head>
+<body>
+	<div id="wrapper"></div>
+
+	<!-- Авторизация -->
+	<script type="text/template" id="auth">
+		<div class="auth_page">
+			<div class="auth_page__blank"></div>
+			<a href="#" class="btn bb_auth">
+				<div class="btn__view btn__view-auth btn__view-center">Авторизация</div>
+			</a>
+		</div>
+	</script>
+	
+	<!-- Приложенице -->
+	<script type="text/template" id="app">
+		<div class="app_page">
+			<div class="user_bar">
+				<img src="<%= photo_max %>" alt="Аватар" class="user_bar__avatar"><div class="user_bar__name"><%= first_name %> <%= last_name %></div>
+			</div>
+			<div class="ctls">
+				<a href="#" class="btn">
+					<div class="btn__view btn__view-reload bb_reload">Обновить</div>
+				</a>
+				<a href="#" class="btn">
+					<div class="btn__view btn__view-logout bb_logout">Выйти</div>
+				</a>
+			</div>
+			<div class="friends_list">
+				<!-- friends -->
+			</div>
+		</div>
+	</script>
+	
+	<!-- friend -->
+	<script type="text/template" id="friend">
+		<img src="<%= photo_100 %>" alt="Аватар друга" class="friend__avatar">
+		<div class="friend__name"><%= first_name %> <%= last_name %></div>
+	</script>
+	
+</body>
+</html>
